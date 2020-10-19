@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation_lab</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      </style>
+  </head>
+  <body>
+    <body>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <h2>Animated Sidenav Example</h2>
+      <p>Click on the element below to open the side navigation menu.</p>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      
+      
+    <div class="container">
+      <p>Parallax Lab</p>
+      <div class="parallax"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        laudantium enim commodi deserunt delectus dolores, eum a distinctio aut
+        maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+        Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+        doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+        explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+        fuga nostrum praesentium perferendis quis nulla id assumenda rem cumque
+        omnis, obcaecati deleniti optio provident aperiam, iusto eum? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Commodi cum,
+        voluptates illum quaerat saepe accusamus eaque inventore odit, delectus
+        laboriosam omnis ab doloribus praesentium reprehenderit sint repellat
+        nihil ex ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis doloremque pariatur saepe eius neque ex, itaque quam ullam
+        voluptatem exercitationem ipsum quae suscipit sunt ducimus, autem animi.
+        Ipsa, non sunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        laudantium enim commodi deserunt delectus dolores, eum a distinctio aut
+        maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+        Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+        doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+        explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+        fuga nostrum praesentium perferendis quis nulla id assumenda rem cumque
+        omnis, obcaecati deleniti optio provident aperiam, iusto eum? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Commodi cum,
+        voluptates illum quaerat saepe accusamus eaque inventore odit, delectus
+        laboriosam omnis ab doloribus praesentium reprehenderit sint repellat
+        nihil ex ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis doloremque pariatur saepe eius neque ex, itaque quam ullam
+        voluptatem exercitationem ipsum quae suscipit sunt ducimus, autem animi.
+        Ipsa, non sunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        laudantium enim commodi deserunt delectus dolores, eum a distinctio aut
+        maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+        Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+        doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+        explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+        fuga nostrum praesentium perferendis quis nulla id assumenda rem cumque
+        omnis, obcaecati deleniti optio provident aperiam, iusto eum? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Commodi cum,
+        voluptates illum quaerat saepe accusamus eaque inventore odit, delectus
+        laboriosam omnis ab doloribus praesentium reprehenderit sint repellat
+        nihil ex ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis doloremque pariatur saepe eius neque ex, itaque quam ullam
+        voluptatem exercitationem ipsum quae suscipit sunt ducimus, autem animi.
+        Ipsa, non sunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        laudantium enim commodi deserunt delectus dolores, eum a distinctio aut
+        maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+        Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+        doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+        explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+        fuga nostrum praesentium perferendis quis nulla id assumenda rem cumque
+        omnis, obcaecati deleniti optio provident aperiam, iusto eum? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Commodi cum,
+        voluptates illum quaerat saepe accusamus eaque inventore odit, delectus
+        laboriosam omnis ab doloribus praesentium reprehenderit sint repellat
+        nihil ex ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis doloremque pariatur saepe eius neque ex, itaque quam ullam
+        voluptatem exercitationem ipsum quae suscipit sunt ducimus, autem animi.
+        Ipsa, non sunt?
+      </p>
+
+      <div class="parallax-window" data-parallax="scroll"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        laudantium enim commodi deserunt delectus dolores, eum a distinctio aut
+        maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+        Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+        doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+        explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+        fuga nostrum praesentium perferendis quis nulla id assumenda rem cumque
+        omnis, obcaecati deleniti optio provident aperiam, iusto eum? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Commodi cum,
+        voluptates illum quaerat saepe accusamus eaque inventore odit, delectus
+        laboriosam omnis ab doloribus praesentium reprehenderit sint repellat
+        nihil ex ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis doloremque pariatur saepe eius neque ex, itaque quam ullam
+        voluptatem exercitationem ipsum quae suscipit sunt ducimus, autem animi.
+        Ipsa, non sunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        laudantium enim commodi deserunt delectus dolores, eum a distinctio aut
+        maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+        Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+        doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+        explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+        fuga nostrum praesentium perferendis quis nulla id assumenda rem cumque
+        omnis, obcaecati deleniti optio provident aperiam, iusto eum? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Commodi cum,
+        voluptates illum quaerat saepe accusamus eaque inventore odit, delectus
+        laboriosam omnis ab doloribus praesentium reprehenderit sint repellat
+        nihil ex ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corporis doloremque pariatur saepe eius neque ex, itaque quam ullam
+        voluptatem exercitationem ipsum quae suscipit sunt ducimus, autem animi.
+        Ipsa, non sunt?
+      </p>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="tilt.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

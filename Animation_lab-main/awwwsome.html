@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation_copy</title>
+    <link rel="stylesheet" href="style_.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="parallax"
+      data-parallax="scroll"
+      data-image-src="/images/img3.png"
+      data-z-index="1"
+      data-scalar-x="8"
+      data-calubrate-y=""
+      data-speed="0.3"
+    >
+      <div class="upper_header_left">
+        <div id="mySidenav" class="sidenav" data-z-index="3">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <span
+          data-z-index="2"
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          >&#9776; open</span
+        >
+        <!-- <img class="list_icon" src="/images/list.png"> -->
+      </div>
+      <div class="upper_header_right">
+        <img class="notification_icon" src="/images/notification-bell.png" />
+        <img class="home_icon" src="/images/home.png" />
+      </div>
+      <div class="lower_header" style="z-index: 0" data-speed="1">
+        <h1 style="z-index: 0" data-speed="1">Floral Floral</h1>
+      </div>
+      <div class="text_column" style="z-index: 0" data-speed="1">
+        <p class="just_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+          laudantium enim commodi deserunt delectus dolores, eum a distinctio
+          aut maiores fugiat deleniti ipsam quo iste necessitatibus tenetur?
+          Exercitationem, sequi illum? Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quia voluptate dolorem quae nemo quisquam ullam,
+          doloremque rem laudantium saepe, corporis impedit tenetur, pariatur
+          explicabo possimus dolorum? Mollitia in velit sint? Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Quasi similique quaerat, rerum
+          fuga nostrum praesentium perferendis quis nulla id assumenda rem
+          cumque omnis, obcaecati deleniti optio provident aperiam, iusto eum?
+        </p>
+      </div>
+      <div class="text_column2" style="z-index: 2" data-speed="1">
+        <p class="just_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+          laudantium enim commodi deserunt delectus dolores, eum a distinctio
+          aut maiores fugiat.
+        </p>
+      </div>
+      <div class="big_footer">
+        <div class="footer-left">
+          <h1>Lorem ipsum dolor</h1>
+        </div>
+        <div class="footer-right">
+          <h1>Lorem ipsum dolor</h1>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("MySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("MySidenav").style.width = "0";
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  </body>
+</html>

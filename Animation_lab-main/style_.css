@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(77, 166, 250);
+}
+
+.parallax {
+  /*  To dajemy jak chcemy stworzyć prostą paralaxe bez js */
+
+  /* background-image: url(/images/img3.png) no-repeat;
+  background-attachment: fixed;
+  background-position: left; */
+
+  background-size: 80%;
+  display: flex;
+  height: 300vh;
+}
+
+.upper_header_left {
+  width: 50%;
+  height: 100px;
+}
+
+/* .upper_header_left .list_icon {
+  width: 50px;
+  padding-left: 20px;
+  padding-top: 15px;
+  position: fixed;
+  height: 50px;
+  z-index: 3;
+} */
+
+.upper_header_left .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: -100px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.upper_header_left .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.upper_header_left .sidenav a:hover {
+  color: #f1f1f1;
+  z-index: 3;
+}
+
+.upper_header_left .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 3;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+} */
+
+.upper_header_right {
+  width: 50%;
+  height: 100px;
+  display: flex;
+}
+
+.upper_header_right .notification_icon {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  padding-top: 15px;
+  right: 7%;
+  z-index: 3;
+}
+
+.upper_header_right .home_icon {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  padding-top: 15px;
+  right: 2%;
+  z-index: 3;
+}
+
+.lower_header {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: flex-start;
+  top: 60px;
+  position: absolute;
+}
+
+.lower_header h1 {
+  text-shadow: 2px 2px rgb(77, 77, 77);
+  word-spacing: 500px;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  margin-left: 100px;
+  font-family: "Lato", sans-serif;
+}
+
+.text_column {
+  color: rgb(27, 13, 0);
+  width: 20%;
+  height: 150vh;
+  text-align: center;
+  float: right;
+  font-size: 20px;
+  background: none;
+  top: 100px;
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  right: 0;
+}
+
+.text_column .just_text::first-letter {
+  -webkit-initial-letter: 4;
+  initial-letter: 4;
+  color: rgb(255, 0, 0);
+  margin-right: 0.2em;
+}
+
+.text_column2 {
+  color: rgb(27, 13, 0);
+  width: 10%;
+  height: 100vh;
+  text-align: center;
+  float: right;
+  font-size: 20px;
+  background: none;
+  top: 600px;
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  right: 580px;
+  z-index: 0;
+}
+
+.text_column2 .just_text::first-letter {
+  -webkit-initial-letter: 4;
+  initial-letter: 4;
+  color: rgb(255, 0, 0);
+  margin-right: 0.2em;
+}
+
+.big_footer {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  z-index: 3;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.big_footer .footer-left {
+  color: rgb(0, 0, 0);
+  text-decoration: overline;
+  height: 10%;
+  left: 3%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+}
+.big_footer .footer-right {
+  color: rgb(0, 0, 0);
+  height: 10%;
+  padding-right: 10%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  right: -5%;
+}
+
+.big_footer .footer-left h1 {
+  text-decoration: overline;
+  text-shadow: 2px 2px rgb(77, 77, 77);
+  font-family: "Sansita Swashed", cursive;
+}
+
+.big_footer .footer-right h1 {
+  text-decoration: overline;
+  text-shadow: 2px 2px rgb(77, 77, 77);
+  font-family: "Sansita Swashed", cursive;
+}
