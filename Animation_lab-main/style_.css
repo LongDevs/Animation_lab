@@ -18,88 +18,70 @@ body {
   height: 300vh;
 }
 
-.upper_header_left {
-  width: 50%;
-  height: 100px;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  display: fixed;
+  z-index: 99;
+  height: 45px;
+  width: 240px;
+  background: transparent;
 }
 
-/* .upper_header_left .list_icon {
-  width: 50px;
-  padding-left: 20px;
-  padding-top: 15px;
-  position: fixed;
-  height: 50px;
-  z-index: 3;
-} */
-
-.upper_header_left .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: -100px;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.upper_header_left .sidenav a {
-  padding: 8px 8px 8px 32px;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  z-index: 3;
 }
 
-.upper_header_left .sidenav a:hover {
-  color: #f1f1f1;
-  z-index: 3;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.upper_header_left .sidenav .closebtn {
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  z-index: 3;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-/* @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-} */
-
-.upper_header_right {
-  width: 50%;
-  height: 100px;
-  display: flex;
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.upper_header_right .notification_icon {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  padding-top: 15px;
-  right: 7%;
-  z-index: 3;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.upper_header_right .home_icon {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  padding-top: 15px;
-  right: 2%;
-  z-index: 3;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .lower_header {
@@ -204,4 +186,26 @@ body {
   text-decoration: overline;
   text-shadow: 2px 2px rgb(77, 77, 77);
   font-family: "Sansita Swashed", cursive;
+}
+
+.Btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  z-index: 4;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(2, 2, 2);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px rgb(77, 77, 77);
+}
+
+.Btn:hover {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(180deg, rgb(23, 111, 252), rgb(255, 0, 0));
 }

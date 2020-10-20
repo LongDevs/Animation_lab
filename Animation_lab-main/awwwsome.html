@@ -24,27 +24,24 @@
       data-calubrate-y=""
       data-speed="0.3"
     >
-      <div class="upper_header_left">
-        <div id="mySidenav" class="sidenav" data-z-index="3">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+      <button onclick="topFunction()" id="myBtn" class="Btn" title="Go to top">
+        Go Up
+      </button>
+
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
-        <span
-          data-z-index="2"
-          style="font-size: 30px; cursor: pointer"
-          onclick="openNav()"
-          >&#9776; open</span
-        >
-        <!-- <img class="list_icon" src="/images/list.png"> -->
-      </div>
-      <div class="upper_header_right">
-        <img class="notification_icon" src="/images/notification-bell.png" />
-        <img class="home_icon" src="/images/home.png" />
       </div>
       <div class="lower_header" style="z-index: 0" data-speed="1">
         <h1 style="z-index: 0" data-speed="1">Floral Floral</h1>
@@ -86,6 +83,29 @@
 
       function closeNav() {
         document.getElementById("MySidenav").style.width = "0";
+      }
+    </script>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
